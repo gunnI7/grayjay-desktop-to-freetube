@@ -7,7 +7,7 @@
 <img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/a7c11c58-370d-455c-a9ce-66f19fd59027" />
 
 
-One-click Python tool to convert local Grayjay Desktop playlists and Watch Later items into a FreeTube .db file.
+Export and back up your local **Grayjay Desktop** playlists and **Watch Later** list into a standard FreeTube `.db` (newline-delimited JSON) file with a single double-click. Works with **FreeTube**, any other video player that accepts FreeTube `.db` imports, or simply as an offline backup of your Grayjay playlists.
 
 ## Features
 
@@ -58,6 +58,16 @@ python3 grayjay_to_freetube.py
 
 ---
 
+## Backups & Other Compatible Apps
+
+Even if you do not use FreeTube, this tool helps fill the gap while Grayjay Desktop lacks built-in desktop export/import ([futo-org/Grayjay.Desktop#317](https://github.com/futo-org/Grayjay.Desktop/issues/317)):
+
+- **Local Backups for Grayjay Users:** Run the script manually or automate it with Windows Task Scheduler or `cron` to keep a clean, readable snapshot of all your playlists and Watch Later items outside your Grayjay folder.
+- **Compatible with Other Apps:** Because the exported `.db` file uses FreeTube's widely supported newline-delimited JSON format, you can use it to move your playlists into any alternative video frontend or player that supports FreeTube playlist imports.
+- **Need Subscriptions Too?** This tool focuses on playlists and Watch Later. To export your channel subscriptions and groups from Grayjay Desktop as well, pair it with [grayjay-subscriptions-exporter](https://github.com/wolfgang101/grayjay-subscriptions-exporter).
+
+---
+
 ## Command-Line Options
 
 ```bash
@@ -93,8 +103,6 @@ python grayjay_to_freetube.py --no-watch-later
   Grayjay Desktop stores data either inside its program directory (portable mode, e.g. `C:\Users\<You>\AppData\Local\Programs\Grayjay`) or in your user data directory (`%APPDATA%\Grayjay` on Windows, `~/.local/share/Grayjay` or `~/Grayjay` on Linux, `~/Library/Application Support/Grayjay` on macOS). Find the folder containing a `playlists` or `stores` subfolder and drag that folder onto `Export_Grayjay_to_FreeTube.bat`.
 - **Windows SmartScreen says "Windows protected your PC"**
   Batch files downloaded from GitHub are unsigned. Click **More info → Run anyway** (you can right-click and inspect `Export_Grayjay_to_FreeTube.bat` in Notepad first—it is plain text).
-- **Need to export channel subscriptions too?**
-  This project focuses on playlists and Watch Later. For channel subscriptions, see [grayjay-subscriptions-exporter](https://github.com/wolfgang101/grayjay-subscriptions-exporter).
 
 ---
 
