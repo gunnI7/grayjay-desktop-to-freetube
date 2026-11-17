@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-3776AB.svg)](https://www.python.org/downloads/)
 [![Dependencies: None](https://img.shields.io/badge/Dependencies-Zero-brightgreen.svg)](#features)
 
-Export your local playlists and **Watch Later** list from **Grayjay Desktop** into a **FreeTube**-compatible `.db` file with a single double-click.
+One-click Python tool to convert local Grayjay Desktop playlists and Watch Later items into a FreeTube .db file.
 
 ## Features
 
