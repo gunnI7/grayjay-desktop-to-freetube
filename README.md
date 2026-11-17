@@ -4,6 +4,9 @@
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-3776AB.svg)](https://www.python.org/downloads/)
 [![Dependencies: None](https://img.shields.io/badge/Dependencies-Zero-brightgreen.svg)](#features)
 
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/a7c11c58-370d-455c-a9ce-66f19fd59027" />
+
+
 One-click Python tool to convert local Grayjay Desktop playlists and Watch Later items into a FreeTube .db file.
 
 ## Features
